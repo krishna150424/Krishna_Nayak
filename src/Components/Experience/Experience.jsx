@@ -45,7 +45,7 @@ const Experience = () => {
       </div>
 
       {/* Experience Section */}
-      <div className="flex flex-col md:flex-row items-center gap-8 bg-slate-950 bg-opacity-45 rounded-xl p-6">
+      <div className="flex flex-col md:flex-row items-center gap-8 bg-slate-950 bg-opacity-45 rounded-xl p-6 mb-12">
         <div className="p-6 bg-zinc-900 rounded-2xl flex items-center justify-center">
           <PiStudentFill color="#8b5cf6" size={80} />
         </div>
@@ -58,7 +58,7 @@ const Experience = () => {
             Qlith Innovation Pvt Ltd, Bhubaneswar
           </h3>
           <p className="text-sm md:text-base text-gray-300">
-            May 2024 - july 2024 (2 Months Internship)
+            May 2024 - July 2024 (2 Months Internship)
           </p>
           <ul className="text-sm md:text-base text-gray-300 space-y-1 mt-2 list-disc list-inside">
             <li>Worked on full-stack MERN projects</li>
@@ -68,8 +68,83 @@ const Experience = () => {
           </ul>
         </div>
       </div>
+
+      {/* Education Section */}
+      <div className="bg-slate-950 bg-opacity-45 rounded-xl p-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center border-b-4 border-purple-500 pb-4">
+          Education
+        </h2>
+
+        {/* MCA */}
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+          <div className="p-5 bg-zinc-900 rounded-2xl flex items-center justify-center">
+            <PiStudentFill color="#8b5cf6" size={60} />
+          </div>
+          <div className="text-white space-y-2 text-center md:text-left">
+            <h3 className="text-lg md:text-xl font-medium">
+              Master of Computer Application(MCA)
+            </h3>
+            <p className="text-sm md:text-base text-gray-300">
+              GIFT Autonomous,Bhubaneswar,Odisha
+            </p>
+            <p className="text-sm md:text-base text-gray-400">
+              2024 - Present
+            </p>
+          </div>
+        </div>
+
+        {/* B.Sc. */}
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+          <div className="p-5 bg-zinc-900 rounded-2xl flex items-center justify-center">
+            <PiStudentFill color="#8b5cf6" size={60} />
+          </div>
+          <div className="text-white space-y-2 text-center md:text-left">
+            <h3 className="text-lg md:text-xl font-medium">
+              Bachelor of Science (B.Sc.)
+            </h3>
+            <p className="text-sm md:text-base text-gray-300">
+              Dr. H.K Mahatab Degree College,Balasore,Odisha
+            </p>
+            <p className="text-sm md:text-base text-gray-400">
+              2021 - 2024 | <span className="text-purple-400 font-medium">72%</span>
+            </p>
+          </div>
+        </div>
+
+        {/* 12th */}
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+          <div className="p-5 bg-zinc-900 rounded-2xl flex items-center justify-center">
+            <PiStudentFill color="#8b5cf6" size={60} />
+          </div>
+          <div className="text-white space-y-2 text-center md:text-left">
+            <h3 className="text-lg md:text-xl font-medium">12th Standard</h3>
+            <p className="text-sm md:text-base text-gray-300">
+              Saheed Higher Secondary School, Bhadrak, Odisha
+            </p>
+            <p className="text-sm md:text-base text-gray-400">
+              2019 - 2021 | <span className="text-purple-400 font-medium">63%</span>
+            </p>
+          </div>
+        </div>
+
+        {/* 10th */}
+        <div className="flex flex-col md:flex-row items-center gap-6">
+          <div className="p-5 bg-zinc-900 rounded-2xl flex items-center justify-center">
+            <PiStudentFill color="#8b5cf6" size={60} />
+          </div>
+          <div className="text-white space-y-2 text-center md:text-left">
+            <h3 className="text-lg md:text-xl font-medium">10th Standard</h3>
+            <p className="text-sm md:text-base text-gray-300">
+              S.N High School, Soro, Balasore, Odisha
+            </p>
+            <p className="text-sm md:text-base text-gray-400">
+              2018 - 2019 | <span className="text-purple-400 font-medium">62%</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
-
+ 
 export default Experience;

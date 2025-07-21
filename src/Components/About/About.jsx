@@ -1,44 +1,53 @@
 import React from "react";
-import AboutImg from "../../assets/aboutimg.jpg";
 import { IoArrowForward } from "react-icons/io5";
 
 const About = () => {
   return (
     <div
       id="About"
-      className="text-white flex flex-col md:flex-row items-center md:justify-center bg-black shadow-2xl mx-0 md:mx-20 bg-opacity-30 rounded-2xl p-8 md:p-12 gap-10 mt-10"
+      className="bg-[#0f172a] text-white rounded-2xl shadow-2xl mx-4 md:mx-20 p-8 md:p-12 mt-10"
     >
-      {/* Image Section */}
-      <div className="flex-1 flex justify-center">
-        <img
-          className="w-60 md:w-80 lg:w-[400px] rounded-xl border-4 border-purple-500 hover:scale-105 transition-transform duration-300"
-          src={AboutImg}
-          alt="About Krishna"
-        />
+      {/* Centered Heading with Full-Width Underline */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-5xl font-extrabold ">About Me</h2>
+        <div className="mt-2 h-1 w-full bg-purple-500 rounded-full"></div>
       </div>
 
-      {/* About Text Section */}
-      <div className="flex-1 space-y-6">
-        <h2 className="text-3xl md:text-4xl font-extrabold border-b-4 border-purple-500 inline-block pb-2">
-          About Me
-        </h2>
+      {/* About Paragraphs */}
+      <div className="max-w-4xl mx-auto space-y-6 text-sm md:text-base text-gray-300 leading-relaxed">
+        {/* Paragraph 1 */}
+        <div className="flex items-start gap-2">
+          <IoArrowForward className="text-purple-400 mt-1 min-w-[20px]" size={18} />
+          <p>
+            Hello, I am a{" "}
+            <span className="text-purple-400 font-semibold">MERN Stack Developer</span>{" "}
+            passionate about building complete web applications using{" "}
+            <span className="font-semibold text-white">MongoDB</span>,{" "}
+            <span className="font-semibold text-white">Express.js</span>,{" "}
+            <span className="font-semibold text-white">React.js</span>, and{" "}
+            <span className="font-semibold text-white">Node.js</span>. I love crafting
+            seamless UIs, powerful backends, and secure database integrations.
+          </p>
+        </div>
 
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-[500px]">
-          <IoArrowForward size={24} className="inline-block text-purple-400 mr-2" />
-          Hello, I am a <span className="font-bold text-purple-400">MERN Stack Developer</span> passionate about building complete web applications using
-          <span className="font-semibold text-white"> MongoDB, Express.js, React.js, and Node.js</span>. 
-          I love crafting fully functional websites with seamless user interfaces, powerful backend services, and secure database connections. My focus is on clean code, responsive design, and delivering real-world solutions.
-        </p>
+        {/* Paragraph 2 */}
+        <div className="flex items-start gap-2">
+          <IoArrowForward className="text-purple-400 mt-1 min-w-[20px]" size={18} />
+          <p>
+            I enjoy working on full-stack projects—from developing dynamic user
+            interfaces to designing REST APIs and managing databases—delivering
+            end-to-end solutions.
+          </p>
+        </div>
 
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-[500px]">
-          <IoArrowForward size={24} className="inline-block text-purple-400 mr-2" />
-          I enjoy working on full-stack projects where I can handle everything from building dynamic UIs to developing REST APIs and integrating databases, delivering end-to-end application solutions.
-        </p>
-
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-[500px]">
-          <IoArrowForward size={24} className="inline-block text-purple-400 mr-2" />
-          Always eager to learn new technologies and improve my skills, I am committed to writing efficient, scalable, and maintainable code to solve real business problems.
-        </p>
+        {/* Paragraph 3 */}
+        <div className="flex items-start gap-2">
+          <IoArrowForward className="text-purple-400 mt-1 min-w-[20px]" size={18} />
+          <p>
+            Always eager to learn new technologies and improve my skills, I aim to write
+            clean, scalable, and maintainable code to solve real business problems.
+          </p>
+        </div>
       </div>
     </div>
   );
