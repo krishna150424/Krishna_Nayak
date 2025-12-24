@@ -12,7 +12,7 @@ const Projects = () => {
         {/* Blinkit Project */}
         <div className="bg-[#171d32] rounded-2xl p-6 w-full md:w-[340px] hover:scale-105 transition-transform duration-300 shadow-lg">
           <img
-            src="https://inc42.com/buzz/blinkit-to-start-uc-modelled-handyman-service-biz-in-few-weeks/"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-ahiwWJnOszwb3FNuLXREat6Bz27AnzoQQ&s"
             alt="Blinkit Clone"
             className="rounded-xl w-full h-48 object-contain mb-4 bg-white p-4"
           />
